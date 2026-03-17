@@ -4,119 +4,121 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dong Qiu | Academic Homepage</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="page-shell">
+  <div class="page">
     <header class="topbar">
       <div>
         <div class="eyebrow">Academic Homepage</div>
-        <div class="site-name" id="site-name">Dong Qiu</div>
+        <div class="site-name" id="siteName">Dong Qiu</div>
       </div>
-      <button id="lang-toggle" class="lang-toggle">中文</button>
+      <button id="langToggle" class="lang-btn">中文</button>
     </header>
 
-    <div class="layout">
-      <aside class="sidebar card">
-        <div class="photo-wrap">
-          <img src="qiu.png" alt="Dong Qiu portrait" class="profile-photo" onerror="this.style.display='none'; this.parentElement.classList.add('photo-missing'); this.parentElement.innerHTML += '<div class=\"photo-fallback\">qiu.png</div>';" />
-        </div>
-
-        <h1 class="name" id="name">Dong Qiu</h1>
-        <div class="alt-name" id="alt-name">邱冬</div>
+    <section class="card hero">
+      <div class="hero-photo-wrap">
+        <img src="qiu.png" alt="Dong Qiu" class="hero-photo" />
+      </div>
+      <div class="hero-content">
+        <h1 id="name">Dong Qiu</h1>
+        <div class="cn-name" id="cnName">邱冬</div>
 
         <div class="section-tag">Section 01</div>
-        <div class="section-head" id="about-title-side">About</div>
-        <p class="bio" id="bio"></p>
+        <h2 class="section-title" id="aboutTitle">About</h2>
+        <p class="bio" id="bio">
+          I am a PhD Candidate in Mathematics at Zhejiang University. My research lies at the
+          intersection of inverse problems, partial differential equations, scientific machine
+          learning, and scientific computing, with a particular interest in inverse boundary value
+          problems for nonlinear wave-type equations.
+        </p>
 
-        <div class="meta-list">
-          <div><strong id="affiliation"></strong></div>
-          <div id="title"></div>
-          <div><a href="mailto:qiudong@zju.edu.cn">qiudong@zju.edu.cn</a></div>
+        <div class="meta-grid">
+          <div class="meta-item"><strong id="affiliation">Zhejiang University</strong></div>
+          <div class="meta-item" id="title">PhD Candidate in Mathematics</div>
+          <div class="meta-item"><a href="mailto:qiudong@zju.edu.cn">qiudong@zju.edu.cn</a></div>
+          <div class="meta-item"><a href="mailto:qiudongdunk@qq.com">qiudongdunk@qq.com</a></div>
         </div>
-      </aside>
+      </div>
+    </section>
 
-      <main class="main-content">
-        <section class="card">
-          <div class="section-title-row">
-            <h2 id="interests-title">Research Interests</h2>
-          </div>
-          <div class="chip-grid" id="interests-list"></div>
-        </section>
+    <section class="card">
+      <div class="card-head">
+        <h2 id="interestsTitle">Research Interests</h2>
+      </div>
+      <div class="interest-grid">
+        <div class="pill" data-en="Inverse Problems" data-zh="反问题">Inverse Problems</div>
+        <div class="pill" data-en="PDEs" data-zh="偏微分方程">PDEs</div>
+        <div class="pill" data-en="Scientific Machine Learning" data-zh="科学机器学习">Scientific Machine Learning</div>
+        <div class="pill" data-en="Scientific Computing" data-zh="科学计算">Scientific Computing</div>
+      </div>
+    </section>
 
-        <section class="card">
-          <div class="section-title-row">
-            <h2>Publications</h2>
-          </div>
-          <div class="pub-list">
-            <article class="pub-item">
-              <div class="pub-main">
-                <h3>Uniqueness Result for Semi-linear Wave Equations with Sources</h3>
-                <p>Dong Qiu, Xiang Xu, Yeqiong Ye, Ting Zhou</p>
-                <div class="pub-meta">To appear in Inverse Problems and Imaging (IPI)</div>
-              </div>
-              <div class="status-badge">Accepted</div>
-              <a class="pub-link" href="https://arxiv.org/abs/2510.04810" target="_blank" rel="noreferrer">arXiv: 2510.04810</a>
-            </article>
+    <section class="card">
+      <div class="card-head">
+        <h2>Publications</h2>
+      </div>
 
-            <article class="pub-item">
-              <div class="pub-main">
-                <h3>Inverse Boundary Value Problems of Determining Nonlinear Coefficients for the JMGT Equation</h3>
-                <p>Dong Qiu, Xiang Xu, Yeqiong Ye, Ting Zhou</p>
-                <div class="pub-meta">arXiv preprint</div>
-              </div>
-              <div class="status-badge">Preprint</div>
-              <a class="pub-link" href="https://arxiv.org/abs/2603.14194" target="_blank" rel="noreferrer">arXiv: 2603.14194</a>
-            </article>
-          </div>
-        </section>
+      <article class="pub-card">
+        <h3>Uniqueness Result for Semi-linear Wave Equations with Sources</h3>
+        <p class="authors">Dong Qiu, Xiang Xu, Yeqiong Ye, Ting Zhou</p>
+        <p class="venue">To appear in Inverse Problems and Imaging (IPI)</p>
+        <div class="pub-footer">
+          <span class="badge">Accepted</span>
+          <a href="https://arxiv.org/abs/2510.04810" target="_blank" rel="noreferrer">arXiv: 2510.04810</a>
+        </div>
+      </article>
 
-        <section class="card">
-          <div class="section-title-row">
-            <h2 id="links-title">Links</h2>
-          </div>
-          <div class="link-grid">
-            <a class="link-card" href="https://scholar.google.com/citations?user=msZEMNQAAAAJ&hl=en" target="_blank" rel="noreferrer">
-              <div class="link-label">Google Scholar</div>
-              <div class="link-text">scholar.google.com/qiudongpage</div>
-            </a>
-            <a class="link-card" href="https://arxiv.org/a/qiu_d_3.html" target="_blank" rel="noreferrer">
-              <div class="link-label">arXiv</div>
-              <div class="link-text">arXiv: qiu_d_3</div>
-            </a>
-            <a class="link-card" href="cv.pdf" target="_blank" rel="noreferrer">
-              <div class="link-label" id="cv-label">CV</div>
-              <div class="link-text" id="cv-text">Download CV</div>
-            </a>
-          </div>
-        </section>
+      <article class="pub-card">
+        <h3>Inverse Boundary Value Problems of Determining Nonlinear Coefficients for the JMGT Equation</h3>
+        <p class="authors">Dong Qiu, Xiang Xu, Yeqiong Ye, Ting Zhou</p>
+        <p class="venue">arXiv preprint</p>
+        <div class="pub-footer">
+          <span class="badge">Preprint</span>
+          <a href="https://arxiv.org/abs/2603.14194" target="_blank" rel="noreferrer">arXiv: 2603.14194</a>
+        </div>
+      </article>
+    </section>
 
-        <section class="card">
-          <div class="section-title-row">
-            <h2 id="contact-title">Contact</h2>
-          </div>
-          <div class="contact-grid">
-            <div class="contact-card">
-              <div class="link-label" id="email-label">Email</div>
-              <div class="contact-text"><a href="mailto:qiudong@zju.edu.cn">qiudong@zju.edu.cn</a></div>
-            </div>
-            <div class="contact-card">
-              <div class="link-label">Google Scholar</div>
-              <div class="contact-text"><a href="https://scholar.google.com/citations?user=msZEMNQAAAAJ&hl=en" target="_blank" rel="noreferrer">Profile Link</a></div>
-            </div>
-            <div class="contact-card">
-              <div class="link-label">arXiv</div>
-              <div class="contact-text"><a href="https://arxiv.org/a/qiu_d_3.html" target="_blank" rel="noreferrer">Author Page</a></div>
-            </div>
-          </div>
-        </section>
+    <section class="card">
+      <div class="card-head">
+        <h2 id="linksTitle">Links</h2>
+      </div>
+      <div class="link-grid">
+        <a class="link-card" href="https://scholar.google.com/citations?user=msZEMNQAAAAJ&hl=en" target="_blank" rel="noreferrer">
+          <div class="link-label">Google Scholar</div>
+          <div class="link-text">scholar.google.com/qiudongpage</div>
+        </a>
+        <a class="link-card" href="https://arxiv.org/a/qiu_d_3.html" target="_blank" rel="noreferrer">
+          <div class="link-label">arXiv</div>
+          <div class="link-text">arXiv: qiu_d_3</div>
+        </a>
+        <a class="link-card" href="cv.pdf" target="_blank" rel="noreferrer">
+          <div class="link-label" id="cvLabel">CV</div>
+          <div class="link-text" id="cvText">Download CV</div>
+        </a>
+      </div>
+    </section>
 
-        <footer class="footer" id="footer-text">Minimal academic homepage for research presentation and contact.</footer>
-      </main>
-    </div>
+    <section class="card">
+      <div class="card-head">
+        <h2 id="contactTitle">Contact</h2>
+      </div>
+      <div class="contact-grid two">
+        <div class="contact-card">
+          <div class="contact-label" id="emailLabel">Email</div>
+          <a href="mailto:qiudong@zju.edu.cn">qiudong@zju.edu.cn</a>
+        </div>
+        <div class="contact-card">
+          <div class="contact-label">QQ Mail</div>
+          <a href="mailto:qiudongdunk@qq.com">qiudongdunk@qq.com</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="footerText">
+      Minimal academic homepage for research presentation and contact.
+    </footer>
   </div>
 
   <script src="script.js"></script>
