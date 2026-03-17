@@ -1,2 +1,2 @@
-# qiudong-math..github.io
+# qiudong-math.github.io
 this is my homepage
